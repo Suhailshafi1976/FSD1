@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    body,h1,h2,p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height:1.6;
+}
+header{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding:1rem;
+}
+main{
+    padding:2rem;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+}
+
+.photo{
+    flex:1;
+    padding:0 2rem;
+}
+
+.photoimg{
+    max-width:100%;
+    height: auto;
+    border-radius:50%;
+    box-shadow: 0 0 10px rgb(253, 246, 205);
+}
+
+.bio{
+    flex:2;
+}
+
+footer{
+    text-align: center;
+    padding:1rem;
+    background-color:black;
+    color:aliceblue;
+}
+
+@media screen and (max-width:768px){
+    .profile{
+        flex-direction: column;
+    }
+}
+</style>
+<body>
+    <header>
+        <div>
+            <h1>SUHAIL</h1>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="photo"></div>
+            <img src="profile.jpg" alt="my photo" width="200" height="200">
+        </div>
+        <div class="bio">
+            <h2>About me</h2>
+            <p>NAME: SUHAIL</p>
+            <P>AGE: 18</P>
+            <P>GENDER: MALE</P>
+            <P>BRANCH: COMPUTER SCIENCE </P>
+            <P>SPECIALIZATION: FULL STACK DEVELOPMENT</P>
+            <P>INSTITUTION: NMAMIT</P>
+            
+            
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;SUHAIL.All Rights Reserved</p>
+    </footer>
+</body>
+</html>
